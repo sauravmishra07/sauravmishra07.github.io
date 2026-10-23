@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Saurav Mishra</title>
-<meta name="description" content="Saurav Mishra — backend and full-stack developer building industrial IoT, automation and ERP platforms: PLC and sensor data into PostgreSQL, REST APIs and dashboards that shop floors run on.">
+<meta name="description" content="Saurav Mishra — software developer in New Delhi building full-stack industrial IoT, automation and ERP platforms: React and Node.js over PostgreSQL and MongoDB, PLC and sensor data, REST APIs and dashboards that shop floors run on.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
@@ -375,6 +375,10 @@ body.lock{overflow:hidden}
   .job::before{left:-24px;width:13px;height:13px}
 }
 @media (max-width:420px){
+  /* the headline's accent phrase is nowrap by default — let it break here
+     so a long phrase can never push the page sideways */
+  .hero h1 em{white-space:normal}
+  .hero h1 em::after{display:none}
   .thumbs{grid-template-columns:1fr}
   .gauge-grid{grid-template-columns:1fr}
   .mark-tx small{display:none}
@@ -392,7 +396,7 @@ body.lock{overflow:hidden}
   <div class="wrap bar-in">
     <a class="mark" href="#top">
       <span class="mark-sq">SM</span>
-      <span class="mark-tx">Saurav Mishra<small>Backend / Full-stack</small></span>
+      <span class="mark-tx">Saurav Mishra<small>Software developer</small></span>
     </a>
     <nav class="nav" id="nav">
       <a href="#work">Work</a>
@@ -423,11 +427,12 @@ body.lock{overflow:hidden}
   <div class="wrap">
     <div class="hero-grid">
       <div>
-        <span class="eyebrow mono"><span class="led"></span>New Delhi, India · Backend &amp; industrial IoT</span>
-        <h1>I build backend software that <em>reads machines</em>.</h1>
+        <span class="eyebrow mono"><span class="led"></span>New Delhi, India · Software developer</span>
+        <h1>I build full-stack software that <em>shop floors run on</em>.</h1>
         <p class="hero-sub">
-          Industrial IoT, automation and ERP platforms — <strong>PLC and sensor data into PostgreSQL</strong>,
-          REST APIs with JWT and action-level RBAC, and React dashboards that shop floors actually run on.
+          <strong>React and TypeScript on the front, Node.js and Express behind it, PostgreSQL and MongoDB underneath</strong>
+          — and PLC, MQTT and sensor feeds wired into the same system. Industrial IoT, automation and ERP platforms,
+          owned from schema design to API delivery to the screen.
           Currently <strong>Software Developer at Itsybizz AI Private Limited</strong>; previously Rankingeek Marketing Agency.
         </p>
         <div class="cta">
@@ -661,7 +666,7 @@ body.lock{overflow:hidden}
         <div class="sec-head rv" style="margin-bottom:22px">
           <div class="lbl">Contact</div>
           <h2>Let's talk</h2>
-          <p>Happy to talk about backend work, industrial data or anything in the systems above. Email is the fastest route.</p>
+          <p>Happy to talk about full-stack work, industrial data or anything in the systems above. Email is the fastest route.</p>
         </div>
         <div class="rv">
           <div class="crow">
