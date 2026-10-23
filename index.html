@@ -448,43 +448,43 @@ body.lock{overflow:hidden}
 
       <aside class="panel sig">
         <div class="sig-head">
-          <div class="sig-title">Signal sources I work with</div>
-          <span class="mono" style="font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3)">I/O</span>
+          <div class="sig-title">How I work across the stack</div>
+          <span class="mono" style="font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3)">Full-stack</span>
         </div>
         <div class="sig-row">
           <span class="sig-dot" style="background:var(--run)"></span>
-          <span class="sig-name">Modbus / RS-485<span>Siemens S7 · Delta DVP · NC300</span></span>
-          <span class="sig-val mono">poll</span>
+          <span class="sig-name">Frontend<span>React · TypeScript · Vite · Tailwind</span></span>
+          <span class="sig-val mono">ui</span>
         </div>
         <div class="sig-row">
           <span class="sig-dot" style="background:var(--run)"></span>
-          <span class="sig-name">MQTT<span>IoT gateways</span></span>
-          <span class="sig-val mono">sub</span>
+          <span class="sig-name">API layer<span>Node.js · Express.js · Laravel · REST</span></span>
+          <span class="sig-val mono">api</span>
         </div>
         <div class="sig-row">
           <span class="sig-dot" style="background:var(--run)"></span>
-          <span class="sig-name">HTTP push<span>API-key secured</span></span>
-          <span class="sig-val mono">ingest</span>
+          <span class="sig-name">Auth &amp; access<span>JWT · action-level RBAC · OAuth</span></span>
+          <span class="sig-val mono">guard</span>
         </div>
         <div class="sig-row">
           <span class="sig-dot" style="background:var(--idle)"></span>
-          <span class="sig-name">Furnace temperature channels<span>SV / PV / DEV in °C</span></span>
-          <span class="sig-val mono">read</span>
+          <span class="sig-name">Data<span>PostgreSQL · MongoDB · MySQL · Prisma</span></span>
+          <span class="sig-val mono">store</span>
         </div>
         <div class="sig-row">
           <span class="sig-dot" style="background:var(--accent)"></span>
-          <span class="sig-name">SAP data feed<span>plant master + exports</span></span>
-          <span class="sig-val mono">sync</span>
+          <span class="sig-name">Delivery<span>Docker · AWS · Jenkins · Git</span></span>
+          <span class="sig-val mono">ship</span>
         </div>
         <div class="gauge">
-          <div class="lbl plain">Furnace channel readout</div>
+          <div class="lbl plain">Request path</div>
           <div class="gauge-grid">
-            <div class="gauge-cell g-sv"><b>SV</b><i>set value</i></div>
-            <div class="gauge-cell g-pv"><b>PV</b><i>process value</i></div>
-            <div class="gauge-cell g-dev"><b>DEV</b><i>deviation</i></div>
+            <div class="gauge-cell g-sv"><b>UI</b><i>react · ts</i></div>
+            <div class="gauge-cell g-pv"><b>API</b><i>node · express</i></div>
+            <div class="gauge-cell g-dev"><b>DATA</b><i>sql · nosql</i></div>
           </div>
           <p class="mono" style="font-size:11px;color:var(--ink-3);margin-top:10px;line-height:1.5">
-            Ten channels per tempering furnace, stored per batch and searchable by history.
+            Schema design to API delivery to the screen — owned end to end, with machine data as one more source.
           </p>
         </div>
       </aside>
