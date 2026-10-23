@@ -186,7 +186,7 @@ section{padding:84px 0;scroll-margin-top:72px}
 
 /* case studies */
 .cases{display:flex;flex-direction:column;gap:26px}
-.case{padding:0;overflow:hidden}
+.case{padding:0;overflow:hidden;scroll-margin-top:78px}
 .case-head{display:flex;gap:18px;align-items:flex-start;padding:26px 26px 22px;border-bottom:1px solid var(--line-2);flex-wrap:wrap}
 .case-no{
   font-family:"IBM Plex Mono",monospace;font-size:11px;font-weight:600;letter-spacing:.1em;
@@ -521,11 +521,14 @@ body.lock{overflow:hidden}
     </div>
     <div class="side">
       <a class="panel sidecard rv" href="https://github.com/sauravmishra07/MINI-ERP-SYSTEM" target="_blank" rel="noopener noreferrer">
-        <div class="lbl plain">Open source · MERN</div>
-        <h3>Mini ERP System
+        <div class="lbl plain">Open source</div>
+        <h3>Mini ERP — Purchase Requests
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"/></svg>
         </h3>
-        <p>A compact ERP covering the core loop — master data, transactions, role-based access and reporting — built end to end from schema design to API delivery.</p>
+        <p>A full-stack ERP for purchase request workflows — creation, approvals, filtering and reporting — with JWT and Google OAuth logins, reusable dashboard components, data tables and activity timelines, over PostgreSQL schemas tuned for pagination and audit logging.</p>
+        <div class="chips">
+          <span class="chip k">React.js</span><span class="chip k">TypeScript</span><span class="chip k">Node.js</span><span class="chip">Express.js</span><span class="chip k">PostgreSQL</span><span class="chip">Prisma ORM</span><span class="chip">JWT</span><span class="chip">Google OAuth</span>
+        </div>
         <div class="url">github.com/sauravmishra07/MINI-ERP-SYSTEM</div>
       </a>
       <a class="panel sidecard rv" href="https://ai-astro-azure.vercel.app/" target="_blank" rel="noopener noreferrer">
@@ -586,7 +589,7 @@ body.lock{overflow:hidden}
     <div class="stack rv">
       <div class="sgroup">
         <div class="lbl">Languages</div>
-        <div class="chips"><span class="chip k">JavaScript (ES6+)</span><span class="chip k">TypeScript</span><span class="chip">PHP</span><span class="chip">SQL</span><span class="chip">HTML5</span><span class="chip">CSS3</span></div>
+        <div class="chips"><span class="chip k">JavaScript (ES6+)</span><span class="chip k">TypeScript</span><span class="chip">PHP</span><span class="chip">Python</span><span class="chip">SQL</span><span class="chip">HTML5</span><span class="chip">CSS3</span></div>
       </div>
       <div class="sgroup">
         <div class="lbl">Frontend</div>
@@ -594,7 +597,7 @@ body.lock{overflow:hidden}
       </div>
       <div class="sgroup">
         <div class="lbl">Backend</div>
-        <div class="chips"><span class="chip k">Node.js</span><span class="chip k">Express.js</span><span class="chip k">Laravel</span><span class="chip">REST APIs</span><span class="chip">GraphQL (basics)</span></div>
+        <div class="chips"><span class="chip k">Node.js</span><span class="chip k">Express.js</span><span class="chip">PHP</span><span class="chip k">Laravel</span><span class="chip">REST APIs</span><span class="chip">GraphQL (basics)</span></div>
       </div>
       <div class="sgroup">
         <div class="lbl">Databases</div>
@@ -606,11 +609,11 @@ body.lock{overflow:hidden}
       </div>
       <div class="sgroup">
         <div class="lbl">Tools</div>
-        <div class="chips"><span class="chip">Git</span><span class="chip">GitHub</span><span class="chip">Postman</span><span class="chip">Composer</span><span class="chip">VS Code</span><span class="chip">Cursor</span><span class="chip">GitHub Copilot</span><span class="chip">Kiro (AWS)</span></div>
+        <div class="chips"><span class="chip">Git</span><span class="chip">GitHub</span><span class="chip">Postman</span><span class="chip">Composer</span><span class="chip">VS Code</span><span class="chip">Cursor</span><span class="chip">GitHub Copilot</span><span class="chip">Kiro (AWS)</span><span class="chip">ChatGPT</span></div>
       </div>
       <div class="sgroup">
         <div class="lbl">Concepts</div>
-        <div class="chips"><span class="chip">MVC</span><span class="chip">RESTful APIs</span><span class="chip">JWT</span><span class="chip">RBAC</span><span class="chip">System Design</span><span class="chip">OOP</span><span class="chip">Agile</span><span class="chip">DSA</span></div>
+        <div class="chips"><span class="chip">MVC</span><span class="chip">RESTful APIs</span><span class="chip">JWT</span><span class="chip">RBAC</span><span class="chip">API Integration</span><span class="chip">System Design</span><span class="chip">OOP</span><span class="chip">Agile</span><span class="chip">DSA</span></div>
       </div>
       <div class="sgroup">
         <div class="lbl">Industrial I/O</div>
@@ -869,8 +872,7 @@ var PROJECTS = [
       ["Users","Merchandisers, production and floor managers, QC, store, packers, vendors, finance, admin — plus buyers via a tracking link"],
       ["Deployment","Web app with simple mobile screens for floor staff and vendors"]
     ],
-    stackLabel:"Modules",
-    tech:[["Samples",1],["Orders",1],["Time &amp; Action",1],["BOM &amp; materials",0],["Production floor",0],["QC · AQL · DHU",0],["Job work",0],["Packing",0],["Dispatch",0],["Payments",0],["Compliance",0]],
+    tech:[["React.js",1],["Node.js",1],["Express.js",1],["PostgreSQL",1],["REST APIs",0],["RBAC",0],["Excel reports",0]],
     shots:[
       ["01-dashboard","Dashboard","Quick actions (log production, gate entry, new sample, raise PO, inspection, invoice), KPI cards for the open order book in pieces and value, a 7-day output sparkline, a T&amp;A overdue ring, materials needing attention, a 14-day production split by cutting / stitching / finishing / packing, orders by stage, quantity by buyer, Shipping next, and a Needs your attention queue."],
       ["02-sample-development","Sample development","Tech packs, measurement specs and costing moving through approval rounds."],
@@ -928,6 +930,7 @@ function el(tag, cls, html){
 
   PROJECTS.forEach(function(p){
     var art = el("article","panel case rv");
+    art.id = p.slug;                       /* deep-link target, e.g. /#afion */
 
     /* head */
     var head = el("div","case-head");
@@ -1195,6 +1198,19 @@ function el(tag, cls, html){
     });
   }, {rootMargin:"-45% 0px -50% 0px"});
   secs.forEach(function(s){ spy.observe(s[0]); });
+})();
+
+/* ─────────── deep link to a case ───────────
+   The case cards are built by JS, so the browser's own hash scroll has already
+   run by the time they exist. Redo it once the DOM is in place. */
+(function(){
+  if (!location.hash) return;
+  var t;
+  try { t = document.getElementById(decodeURIComponent(location.hash.slice(1))); } catch(e){ return; }
+  if (!t) return;
+  requestAnimationFrame(function(){
+    requestAnimationFrame(function(){ t.scrollIntoView(); });
+  });
 })();
 
 })();
